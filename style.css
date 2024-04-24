@@ -117,7 +117,7 @@ span {
     line-height: 1;
 }
 
-.home-img {
+/* .home-img {
     border-radius: 50%;
 }
 
@@ -133,8 +133,27 @@ span {
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
+} */
+.home-img {
+    position: relative;
+    top: 3rem; /* Ajuste para posicionar corretamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.home-img img {
+    width: 80px; /* Largura da imagem */
+    border-radius: 50%;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+/* .home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color), 0 0 25px var(--main-color), 0 0 25px var(--main-color);
+} */
 .home-img img:hover {
     box-shadow: 0 0 25px var(--main-color), 0 0 25px var(--main-color), 0 0 25px var(--main-color);
 
